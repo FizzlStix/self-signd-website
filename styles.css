@@ -1,1 +1,50 @@
-...
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: black;
+  color: white;
+  padding: 1rem;
+}
+header nav a {
+  margin-right: 15px;
+  color: white;
+  text-decoration: none;
+}
+.slideshow img {
+  width: 100%;
+  height: auto;
+}
+.whats-happening, .releases, .store {
+  padding: 2rem;
+}
+.store-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+.store-item {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background: #fff;
+}
+.store-item img {
+  max-width: 100%;
+}
+.buy-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: black;
+  color: white;
+  text-decoration: none;
+}
+footer {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

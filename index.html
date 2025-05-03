@@ -1,1 +1,61 @@
-...
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Self Sign'd</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">Self Sign'd</a></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="store.html">Store</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="slideshow">
+    <div class="slides">
+      <a href="#"><img src="images/slide1.jpg" alt="Slide 1" /></a>
+      <a href="#"><img src="images/slide2.jpg" alt="Slide 2" /></a>
+      <a href="#"><img src="images/slide3.jpg" alt="Slide 3" /></a>
+    </div>
+  </section>
+
+  <section class="whats-happening">
+    <h2>What's Happening?</h2>
+    <ul>
+      <li>New artist signing: Echo Dust</li>
+      <li>Live showcase at Brooklyn Steel – June 5</li>
+      <li>Music video for Lola Sage drops Friday</li>
+    </ul>
+  </section>
+
+  <section class="releases">
+    <h2>Out Now / Coming Soon</h2>
+    <ul>
+      <li><strong>Echo Dust</strong> – Neon Ritual (Out Now)</li>
+      <li><strong>Lola Sage</strong> – Burn Forever (Coming May 15)</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Self Sign'd. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const slides = document.querySelectorAll(".slides a");
+    let index = 0;
+    setInterval(() => {
+      slides.forEach((slide, i) => {
+        slide.style.display = i === index ? "block" : "none";
+      });
+      index = (index + 1) % slides.length;
+    }, 2000);
+  </script>
+</body>
+</html>
